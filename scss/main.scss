@@ -319,7 +319,8 @@ img {
       grid-template-areas:
         "name email"
         "subject phone"
-        "message message";
+        "message message"
+        "recap recap";
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
@@ -338,6 +339,10 @@ img {
       .message-input {
         grid-area: message;
         height: 100px;
+      }
+      div[class="my-2"] {
+        grid-area: recap;
+        justify-self: center;
       }
 
       .text-input {
