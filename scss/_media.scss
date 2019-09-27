@@ -1,0 +1,141 @@
+@media screen and (max-width: 800px) {
+  #home-a {
+    .specials {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  #home-b {
+    .stats {
+      grid-template-columns: repeat(2, 1fr);
+
+      div:nth-child(2) {
+        background: #ccc;
+      }
+      div:nth-child(3) {
+        background: #ccc;
+      }
+      div:last-child {
+        background: #f4f4f4;
+      }
+    }
+  }
+  #home-c .process {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #about-c .about-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #about-d .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #work-a .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #contact-c {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .container {
+    width: 99%;
+  }
+  #header-inner {
+    height: auto;
+  }
+  #main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+      font-size: 0.8rem;
+    }
+  }
+  #header-home .header-content h1 {
+    font-size: 2rem;
+    .lead {
+      font-size: 1rem;
+    }
+  }
+
+  #home-a {
+    .specials {
+      grid-template-columns: 1fr;
+    }
+  }
+  #home-b {
+    .stats {
+      grid-template-columns: 1fr;
+      div:nth-child(2) {
+        background: #ccc;
+      }
+      div:nth-child(3) {
+        background: #f4f4f4;
+      }
+      div:last-child {
+        background: #ccc;
+      }
+    }
+  }
+  #home-c .process {
+    grid-template-columns: 1fr;
+  }
+
+  #about-a .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "award1"
+      "award2"
+      "award3";
+  }
+  #about-c .about-logos {
+    grid-template-columns: 1fr;
+    img {
+      width: 50%;
+    }
+  }
+  #about-d .testimonials {
+    grid-template-columns: 1fr;
+    ul {
+      margin-bottom: 3rem;
+    }
+  }
+
+  #work-a .items {
+    grid-template-columns: 1fr;
+  }
+
+  #contact-a .text-fields {
+    grid-template-areas:
+      "name"
+      "email"
+      "subject"
+      "phone"
+      "message";
+  }
+  #contact-c {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  #main-footer .container {
+    width: 95%;
+  }
+  #main-footer p {
+    width: 40%;
+    margin: auto;
+  }
+  #main-footer .social {
+    display: flex;
+    justify-content: space-around;
+    .fab {
+      margin: 0 !important;
+      margin-left: 0.5rem !important;
+    }
+  }
+}
