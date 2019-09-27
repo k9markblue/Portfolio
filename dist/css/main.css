@@ -379,7 +379,7 @@ img {
   /* Section C */ }
   #contact-a .text-fields {
     display: grid;
-    grid-template-areas: "name email" "subject phone" "message message";
+    grid-template-areas: "name email" "subject phone" "message message" "recap recap";
     grid-gap: 1.2rem;
     margin-bottom: 1.2rem; }
     #contact-a .text-fields .name-input {
@@ -393,6 +393,9 @@ img {
     #contact-a .text-fields .message-input {
       grid-area: message;
       height: 100px; }
+    #contact-a .text-fields div[class="my-2"] {
+      grid-area: recap;
+      justify-self: center; }
     #contact-a .text-fields .text-input {
       padding: 0.5rem 1rem; }
   #contact-a button[type="submit"] {
@@ -492,7 +495,7 @@ img {
   #work-a .items {
     grid-template-columns: 1fr; }
   #contact-a .text-fields {
-    grid-template-areas: "name" "email" "subject" "phone" "message"; }
+    grid-template-areas: "name" "email" "subject" "phone" "message" "recap"; }
   #contact-c {
     padding: 1rem;
     font-size: 1.2rem; }
